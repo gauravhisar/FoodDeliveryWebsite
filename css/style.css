@@ -19,6 +19,7 @@ html{
     align-items: center;
     position: sticky;
     top: 0px;
+    z-index: 2;
 }
 
 #navbar::before{
@@ -130,7 +131,7 @@ html{
 
 /* Clients Section */
 #client-section{ 
-    position: relative;
+    position:unset;
 }
 
 #client-section::before{
