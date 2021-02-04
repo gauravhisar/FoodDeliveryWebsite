@@ -7,8 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tastelievery</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
     <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -28,7 +33,7 @@
         <h1 class="h-primary">Welcome to MyOnlineMeal</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis dolorum numquam minus. </p>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
-        <button class="btn">Order Now</button>
+        <button data-modal-target="#modal" class="btn">Order Now</button>
     </section>
 
     <section id="services-container">
@@ -108,12 +113,125 @@
             <button class="btn">Submit</button>
         </div>
     </section>
-
+    
     <footer>
         <div class="center">
             Simple and responsive food delivery website.
         </div>
     </footer>
+
+    <!-- Pop Ups  -->
+    <div class="modal" id="modal">
+        <div class="modal-header">
+          <div class="title">Food Catalog</div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+          <ul>
+                
+              <li class = "food-item" id="item1">
+                  <img src="logo.png">
+                  <div class="food-description">
+                    <p class="food-name">Pizza</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sunt hic, veniam optio quos molestiae et!</p>
+                </div>
+                <button class="order-food">Order</button>
+              </li>
+              <li class = "food-item" id="item2">
+                <img src="logo.png">
+                <div class="food-description">
+                    <p class="food-name">Pizza</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sunt hic, veniam optio quos molestiae et!</p>
+                </div>
+                <button class="order-food">Order</button>
+
+              </li>
+              <li class = "food-item" id="item3">
+                <img src="logo.png">
+                <div class="food-description">
+                    <p class="food-name">Pizza</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sunt hic, veniam optio quos molestiae et!</p>
+                </div>
+                <button class="order-food">Order</button>
+
+              </li>
+              <li class = "food-item" id="item4">
+                <img src="logo.png">
+                <div class="food-description">
+                    <p class="food-name">Pizza</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sunt hic, veniam optio quos molestiae et!</p>
+                </div>
+                <button class="order-food">Order</button>
+              </li>
+              <li class = "food-item" id="item5">
+                <img src="logo.png">
+                <div class="food-description">
+                    <p class="food-name">Pizza</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sunt hic, veniam optio quos molestiae et!</p>
+                </div>
+                <button class="order-food">Order</button>
+
+
+              </li>
+              <li class = "food-item" id="item6">
+                <img src="logo.png">
+                <div class="food-description">
+                    <p class="food-name">Pizza</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sunt hic, veniam optio quos molestiae et!</p>
+                </div>
+                <button class="order-food">Order</button>
+
+              </li>
+              <li class = "food-item" id="item7">
+                <img src="logo.png">
+                <div class="food-description">
+                    <p class="food-name">Pizza</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sunt hic, veniam optio quos molestiae et!</p>
+                </div>
+                <button class="order-food">Order</button>
+
+              </li>
+              <li class = "food-item" id="item8">
+                <img src="logo.png">
+                <div class="food-description">
+                    <p class="food-name">Pizza</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sunt hic, veniam optio quos molestiae et!</p>
+                </div>
+                <button class="order-food">Order</button>
+              </li>
+              <li class = "food-item" id="item9">
+                <img src="logo.png">
+                <div class="food-description">
+                    <p class="food-name">Pizza</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sunt hic, veniam optio quos molestiae et!</p>
+                </div>
+                <button class="order-food">Order</button>
+
+              </li>
+              <li class = "food-item" id="item10">
+                <img src="logo.png">
+                <div class="food-description">
+                    <p class="food-name">Pizza</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sunt hic, veniam optio quos molestiae et!</p>
+                </div>
+                <button class="order-food">Order</button>
+
+              </li>
+              <li class = "food-item" id="item11">
+                <img src="logo.png">
+                <div class="food-description">
+                    <p class="food-name">Pizza</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sunt hic, veniam optio quos molestiae et!</p>
+                </div>
+                <button class="order-food">Order</button>
+
+              </li>
+          </ul>
+        </div>
+      </div>
+      <div id="overlay"></div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src ='JavaScript/script.js'></script>
 </body>
 
 </html>

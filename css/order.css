@@ -1,0 +1,113 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+  }
+  
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    /* background-color: aquamarine; */
+    width: 100%;
+  }
+  
+  .modal-header .title {
+    font-size: 1.30rem;
+    font-weight: bold;
+    font-family: 'Yusei Magic', sans-serif;;
+  }
+  
+  .modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .modal-body {
+    border-top: 1px solid black;
+    padding: 1px 15px 1px 5px;
+    margin-top: 43px;
+    margin-bottom: 5px;
+    height: 85vh;
+    overflow-y: scroll;
+    display: flex;
+    scroll-behavior: smooth;
+  }
+
+  
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+
+  /* Code we can need to work on  */
+  .food-item{
+    padding: 5px 2px;
+    display: flex;
+    height: 110px;
+
+  }
+  .food-item img{
+    border-right: 1px solid black;
+    padding-right: 5px;
+  }
+
+  .food-description{
+    padding-left: 6px;
+    font-size:0.44cm;
+    font-weight: 501;
+  }
+
+  .food-name{
+    padding-left: 4px;
+    font-size: larger;
+    font-weight:normal;
+    font-family: 'Yusei Magic', sans-serif;
+  }
+  .food-item button{
+    border-radius: 6px;
+    height: 30%;
+    width: 40%;
+    margin-top: 30px;
+    margin-left: 10px;
+    background-color: beige;
+    font-family: 'Yusei Magic', sans-serif;
+    font-size:4.5mm;
+    cursor:pointer;
+
+  }
