@@ -80,17 +80,24 @@
     padding: 5px 2px;
     display: flex;
     height: 110px;
-
   }
   .food-item img{
     border-right: 1px solid black;
     padding-right: 5px;
+    height:100px;
+    width: 100px;
   }
 
   .food-description{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: fit-content;
+    padding-bottom: 10px;
     padding-left: 6px;
     font-size:0.44cm;
     font-weight: 501;
+    text-align: left;
   }
 
   .food-name{
