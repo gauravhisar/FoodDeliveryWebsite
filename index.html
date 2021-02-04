@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--<title>Best Online Food Delivery Service in India | MyOnlineMeal.com</title>-->
     <title>Tastelievery</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
     <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -26,39 +30,44 @@
     </nav>
 
     <section id="home">
-        <h1 class="h-primary">Namaste! Welcome to Tastelievery</h1>
+        <h1 class="h-primary"><br/><br/><br/><br/>Namaste! Welcome to Tastelievery</h1>
         <p>Delicious food at your door step</p>
         <p>So what are you waiting for?</p>
-        <button class="btn">Order Now</button>
+        <!--<button class="btn">Order Now</button>
+        <h1 class="h-primary">Welcome to MyOnlineMeal</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis dolorum numquam minus. </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>-->
+        <button data-modal-target="#modal" class="btn">Order Now</button>
     </section>
 
     <section id="services-container">
-        <h1 class="h-primary center">Our Services</h1>
+        <h1 class="h-primary center" style="color: antiquewhite;">Our Services</h1>
         <div id="services">
-            <div class="box">
-                <img src="img/1.png" alt="">
+            <div class="box" style="background-color: rgba(255,169,59,255);">
+                <img src="img/fc.gif" alt="">
                 <h2 class="h-secondary center">Food Catering</h2>
-                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et qui, repudiandae similique nam, recusandae quidem ab asperiores ex, aut fugit labore veritatis facere?
-                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
-                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+                <p class="center">
+                    Enjoy our food catering services with delicious and fresh food around the clock
+                    every day.
+                </p>
             </div>
-            <div class="box">
-                <img src="img/2.png" alt="">
-                <h2 class="h-secondary center">Bulk Ordering</h2>
-                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laudantium a incidunt animi ad, ab dignissimos vero? Unde numquam odit repudiandae perferendis nisi.
-
-                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
-                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+            <div class="box" style="background-color: rgba(221,220,228,255)">
+                <img src="img/bc.jpg" alt="">
+                <h2 class="h-secondary center">Food for all</h2>
+                <p class="center">
+                   With our Food for all, We provide food in bulk for your 
+                   various important occasions at our best prices.
+                </p>
             </div>
-            <div class="box">
-                <img src="img/3.png" alt="">
-                <h2 class="h-secondary center">Food Ordering</h2>
-                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus provident fugiat aliquam minima at explicabo. Earum eveniet quaerat, sunt molestias nesciunt quas! Quis.
-                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
-                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+            <div class="box" style="background-color: rgba(255,255,255,255);">
+                <img src="img/delivery.gif" alt="">
+                <h2 class="h-secondary center">Food delivery</h2>
+                <p class="center">
+                    Don't wanna come out?<br>
+                    Don't worry we will deliever your favorite food to you 
+                    within 30 minutes.
+                    We are just one call away.
+                </p> 
             </div>
         </div>
     </section>
@@ -66,24 +75,24 @@
         <h1 class="h-primary center">Our Clients</h1>
         <div id="clients">
             <div class="client-item">
-                <img src="img/logo1.png" alt="Our Client">
+                <img src="img/dom_logo.png" alt="Our Client">
             </div>
             <div class="client-item">
-                <img src="img/logo2.png" alt="Our Client">
+                <img src="img/mcd_logo.png" alt="Our Client">
             </div>
           
             <div class="client-item">
-                <img src="img/logo4.png" alt="Our Client">
+                <img src="img/wow_momo_logo.jpg" alt="Our Client">
             </div>
             <div class="client-item">
-                <img src="img/logo3.png" alt="Our Client">
+                <img src="img/bikanerwala_logo.png" alt="Our Client">
             </div>
         </div>
 
     </section>
 
     <section id="contact">
-        <h1 class="h-primary center">Contact Us</h1>
+        <h6 class="h-primary center">Have any query?<br>We are happy to help</h6>
         <div id="contact-box">
             <form action="">
                 <div class="form-group">
@@ -100,17 +109,103 @@
                 </div>
                 <div class="form-group">
                     <label for="message">Message: </label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                </div>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message for us"></textarea>
+                </div> 
             </form>
         </div>
+        <div class="center">
+            <button class="btn">Submit</button>
+        </div>
     </section>
-
+    
     <footer>
         <div class="center">
-            Copyright &copy; www.myOnlineMeal.com. All rights reserved!
+            Simple and responsive food delivery website.
         </div>
     </footer>
+
+    <!-- Pop Ups  -->
+    <div class="modal" id="modal">
+        <div class="modal-header">
+          <div class="title">Food Catalog</div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+          <ul>
+                
+              <li class = "food-item" id="item1">
+                  <img src="img/pizza.jpg">
+                  <div class="food-description">
+                    <p class="food-name">Pizza</p>
+                    <p>The most exotic cheese and crust with toppings as per you taste.
+                    <br>Price: ₹450 (incl. of all taxes)
+                </div>
+                <button class="order-food">Order</button>
+              </li>
+              <li class = "food-item" id="item2">
+                <img src="img/cb.jpg">
+                <div class="food-description">
+                    <p class="food-name">Chole Bhature</p>
+                    <p>The great Indian taste of spices in delicious Chole complimented 
+                    <br>with soft Bhature.
+                    <br>Price: ₹120(incl. of all taxes)
+                    </p>
+                </div>
+                <button class="order-food">Order</button>
+
+              </li>
+              <li class = "food-item" id="item3">
+                <img src="img/momos.jpg">
+                <div class="food-description">
+                    <p class="food-name">Momos</p>
+                    <p>The momos filled with all good veggies complimented with extra spicy chutney.
+                    <br>Price: ₹100(incl. of all taxes)
+                    </p>
+                </div>
+                <button class="order-food">Order</button>
+
+              </li>
+              <li class = "food-item" id="item4">
+                <img src="img/sr.jpg">
+                <div class="food-description">
+                    <p class="food-name">Spring Rolls</p>
+                    <p>The crispy Spring Rolls with spicy chutney and sauces for you.
+                    <br>Price: ₹150(incl. of all taxes)
+                    </p>
+                </div>
+                <button class="order-food">Order</button>
+              </li>
+
+              <li class = "food-item" id="item5">
+                <img src="img/rm.jpg">
+                <div class="food-description">
+                    <p class="food-name">Rasmalai</p>
+                    <p>Have a sweet-tooth? Try sweet Rasmalai to satisfy your dessert cravings. 
+                    <br>Price: ₹100(incl. of all taxes)
+                    </p>
+                </div>
+                <button class="order-food">Order</button>
+
+              </li>
+              <li class = "food-item" id="item11">
+                <img src="img/OS.jpg">
+                <div class="food-description">
+                    <p class="food-name">Oreo Shake</p>
+                    <p>Like Oreos? Like Shakes?
+                    Well definately gonna love cold Oreo Shakes !!!
+                    <br>Price: ₹180(incl. of all taxes)
+                    </p>
+                </div>
+                <button class="order-food">Order</button>
+              </li>
+            </li>
+
+        </ul>
+        </div>
+      </div>
+      <div id="overlay"></div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src ='JavaScript/script.js'></script>
 </body>
 
 </html>

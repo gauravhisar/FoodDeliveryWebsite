@@ -10,8 +10,8 @@
 }
 /* Home section */
 #home{
-    height: 370px; 
-    padding: 3px 28px;
+    height: 350px; 
+    padding: 0px 28px;
 }
 
 #home::before{
@@ -29,7 +29,7 @@
 
 #services .box { 
     padding: 14px;
-    margin: 2px 0px; 
+    margin: 0px 65x; 
     margin-bottom: 20px;
 }
 
